@@ -1,0 +1,161 @@
+items:
+- id: root_instruction_md
+  description: The repository root holds a file named instruction.md.
+  score: 1
+  note: 'Source: Repository and Folder Structure. Confirm the file is present at the task root.'
+- id: tests_rubric_yaml
+  description: The tests folder holds a file named rubric.yaml.
+  score: 1
+  note: 'Source: Repository and Folder Structure. Confirm the file is present in the tests folder.'
+- id: client_folder_present
+  description: The repository holds a client folder.
+  score: 1
+  note: 'Source: Repository and Folder Structure. Confirm the client folder exists.'
+- id: server_folder_present
+  description: The repository holds a server folder.
+  score: 1
+  note: 'Source: Repository and Folder Structure. Confirm the server folder exists.'
+- id: assets_intro_mp4
+  description: The assets folder holds a file named brand_intro.mp4.
+  score: 1
+  note: 'Source: Repository and Folder Structure. Confirm the file is present in the assets folder.'
+- id: frontend_react_vite
+  description: The front end is a React project built with Vite.
+  score: 1
+  note: 'Source: Technology Stack. Inspect the client build config for Vite and React.'
+- id: backend_node_express
+  description: The back end uses Node with Express.
+  score: 1
+  note: 'Source: Technology Stack. Inspect the server folder for an Express application.'
+- id: db_driver_env
+  description: The code selects the database through an environment variable named DB_DRIVER.
+  score: 1
+  note: 'Source: Technology Stack. Search the server code for the DB_DRIVER variable.'
+- id: table_users
+  description: The schema defines a users table.
+  score: 1
+  note: 'Source: Data Model and Schema. Inspect the schema for the users table.'
+- id: table_games
+  description: The schema defines a games table.
+  score: 1
+  note: 'Source: Data Model and Schema. Inspect the schema for the games table.'
+- id: table_scores
+  description: The schema defines a scores table.
+  score: 1
+  note: 'Source: Data Model and Schema. Inspect the schema for the scores table.'
+- id: table_wallet_transactions
+  description: The schema defines a wallet_transactions table.
+  score: 1
+  note: 'Source: Data Model and Schema. Inspect the schema for the wallet_transactions table.'
+- id: table_tournaments
+  description: The schema defines a tournaments table.
+  score: 1
+  note: 'Source: Data Model and Schema. Inspect the schema for the tournaments table.'
+- id: fk_scores_user
+  description: The scores table user_id field references the users table id field.
+  score: 1
+  note: 'Source: Data Model and Schema. Inspect the scores foreign key definition.'
+- id: games_category_enum
+  description: The games category field value is one of casino, arcade, casual, esports, or racing.
+  score: 1
+  note: 'Source: Data Model and Schema. Inspect seeded rows for the allowed category set.'
+- id: password_bcrypt
+  description: Stored passwords are bcrypt hashes rather than plain text.
+  score: 1
+  note: 'Source: Authentication and Sessions. Inspect the users password_hash values.'
+- id: token_http_only_cookie
+  description: Sign in sets a JSON Web Token inside an HTTP only cookie.
+  score: 1
+  note: 'Source: Authentication and Sessions. Inspect the sign in response headers for the cookie.'
+- id: protected_route_401
+  description: A request to a protected route without a valid token returns status 401.
+  score: 1
+  note: 'Source: Authentication and Sessions. Call a protected route with no token and read the status.'
+- id: starting_balance_500
+  description: A new account starts with a balance of 500 virtual coins.
+  score: 1
+  note: 'Source: User Accounts and Profiles. Create an account and read the initial coin_balance.'
+- id: username_unique
+  description: The username field is unique across the users table.
+  score: 1
+  note: 'Source: User Accounts and Profiles. Attempt a duplicate username and confirm rejection.'
+- id: email_unique
+  description: The email field is unique across the users table.
+  score: 1
+  note: 'Source: User Accounts and Profiles. Attempt a duplicate email and confirm rejection.'
+- id: library_min_20_games
+  description: The game library lists at least 20 games.
+  score: 1
+  note: 'Source: Game Library and Categories. Count the games on the library page.'
+- id: category_min_three_games
+  description: Each of the five categories holds at least three games.
+  score: 1
+  note: 'Source: Game Library and Categories. Count games per category.'
+- id: category_filter_controls
+  description: The library shows filter controls for all five categories.
+  score: 1
+  note: 'Source: Game Library and Categories. Confirm five category filters render.'
+- id: library_search_field
+  description: The library search field filters games by title text.
+  score: 1
+  note: 'Source: Game Library and Categories. Type a title fragment and confirm filtering.'
+- id: playable_spin_wheel
+  description: The site runs Spin Wheel in the browser.
+  score: 1
+  note: 'Source: Playable Games. Open Spin Wheel and confirm it plays.'
+- id: playable_brick_breaker
+  description: The site runs Brick Breaker in the browser.
+  score: 1
+  note: 'Source: Playable Games. Open Brick Breaker and confirm it plays.'
+- id: playable_memory_match
+  description: The site runs Memory Match in the browser.
+  score: 1
+  note: 'Source: Playable Games. Open Memory Match and confirm it plays.'
+- id: playable_kart_sprint
+  description: The site runs Kart Sprint in the browser.
+  score: 1
+  note: 'Source: Playable Games. Open Kart Sprint and confirm it plays.'
+- id: playable_submits_score
+  description: Each playable game submits a final score to the scores table for the signed in player.
+  score: 1
+  note: 'Source: Playable Games. Finish a round and confirm a scores row is written.'
+- id: playable_credits_coins
+  description: Each playable game credits a coin reward to the wallet.
+  score: 1
+  note: 'Source: Playable Games. Finish a round and confirm the balance rises.'
+- id: transaction_records_amount
+  description: Every balance change writes a wallet_transactions row recording the amount.
+  score: 1
+  note: 'Source: Wallet and Virtual Coins. Trigger a balance change and read the amount field.'
+- id: balance_never_negative
+  description: The wallet balance never drops below zero.
+  score: 1
+  note: 'Source: Wallet and Virtual Coins. Attempt to overspend and confirm the floor at zero.'
+- id: leaderboard_by_score
+  description: The leaderboard ranks players by best score within a selected game.
+  score: 1
+  note: 'Source: Leaderboard. Open the per game leaderboard and confirm ordering.'
+- id: leaderboard_by_coins
+  description: The leaderboard offers a view that ranks players by total coin balance.
+  score: 1
+  note: 'Source: Leaderboard. Switch to the coin ranking view and confirm ordering.'
+- id: join_debits_entry_cost
+  description: Joining a tournament subtracts the entry cost from the balance.
+  score: 1
+  note: 'Source: Tournaments. Join a tournament and confirm the debit.'
+- id: seed_open_tournament
+  description: The seed data includes at least one tournament with status open.
+  score: 1
+  note: 'Source: Tournaments. Inspect seeded tournaments for an open status.'
+- id: seed_demo_user
+  description: The seed script creates at least one demo user with documented login credentials.
+  score: 1
+  note: 'Source: Seed Data Requirements. Confirm a demo user exists with credentials in the README.'
+- id: contrast_ratio_4_5
+  description: Body text holds a contrast ratio of at least 4.5 to 1 against its background.
+  score: 1
+  note: 'Source: Responsive Layout and Accessibility. Measure text contrast with a checker.'
+- id: no_real_money_flow
+  description: The site contains no flow that handles real money or stores payment details.
+  score: 1
+  note: 'Source: Security Requirements. Inspect the site for any payment flow.'

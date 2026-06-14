@@ -1,0 +1,38 @@
+Bhaucastic Online Gaming Website
+Scope of Work
+
+This document lists what the build includes, what it does not include, and the assumptions that frame both lists.
+
+In Scope
+
+1. A React front end built with Vite that runs as a single page application.
+2. A Node and Express back end that serves a JSON API.
+3. A database layer that works with either MongoDB or SQLite, chosen at setup time through an environment variable.
+4. Account sign up, sign in, and sign out using JSON Web Tokens delivered in an HTTP only cookie.
+5. A game library page that lists at least 20 seeded games across five categories: casino, arcade, casual, esports, and racing.
+6. Category filtering and a search field on the game library page.
+7. Four playable games that run inside the site: Spin Wheel, Brick Breaker, Memory Match, and Kart Sprint.
+8. A virtual coin wallet that grants a starting balance, records every change as a transaction, and shows a running balance.
+9. A leaderboard that ranks players by their best score and by total coins.
+10. Tournaments that players join with coins, each with a start time, an end time, and a final ranking.
+11. A responsive layout that works on phones, tablets, and desktops.
+12. Seed scripts that fill the database with games, sample scores, and at least one open tournament.
+
+Out of Scope
+
+1. Any handling of real money, including deposits, withdrawals, or payment processors.
+2. Native mobile applications for iOS or Android.
+3. Live multiplayer netcode or real time voice chat.
+4. Video streaming or broadcast features.
+5. Email delivery for password reset in this build. Password reset is noted as a later phase.
+6. Server hosting fees, domain registration, and ongoing maintenance after handoff.
+7. Content moderation tooling beyond basic input validation.
+
+Assumptions
+
+1. Coins carry no cash value and are used only inside the site.
+2. The client supplies final game artwork later. This build uses generated placeholder covers.
+3. One shared database is enough for launch. Sharding and read replicas are not needed at this stage.
+4. The site launches in English only. Other languages are a later phase.
+5. The client hosts the application and runs the seed scripts using the included instructions.
+6. Browsers released within the last two years are the support target.

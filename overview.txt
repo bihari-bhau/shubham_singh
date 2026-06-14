@@ -1,0 +1,17 @@
+Bhaucastic Online Gaming Website
+Project Overview
+
+Client
+Bhaucastic is an online gaming brand that wants one web destination where visitors browse many games, play a few of them directly in the browser, earn virtual coins, climb a leaderboard, and enter tournaments. The brand voice is loud and competitive, drawn from the esports world.
+
+Audience
+The primary audience is players between the ages of 16 and 34 who already follow esports, watch game streams, and play casual titles on phones and laptops. They expect fast load times, a dark interface that stays easy on the eyes during long sessions, and clear feedback when they win coins or move up the leaderboard. A secondary audience is casual visitors who arrive from social posts and want to try one quick game without creating an account.
+
+Brand
+The visual identity is aggressive esports. The core colors are crimson red at hex E10600 used for energy and calls to action, set on a jet black background at hex 0A0A0A. Supporting greys carry body text and surfaces. Headings are bold and condensed. Body copy stays readable at 16px or larger. The logo is a wide wordmark, and a square mark serves icons, avatars, and the browser tab.
+
+Delivery Scope
+This is a full stack delivery. It covers a React front end, a Node and Express back end, a database, account sign up and sign in, the game library, the virtual coin wallet, the leaderboard, and tournaments. It assumes virtual coins only with no real money handling and no payment processor.
+
+Money Model
+The wallet uses virtual coins only. Coins are granted on sign up, earned by playing games, and spent on tournament entry. The site never accepts, stores, or pays out real money, and it contains no purchase flow.
